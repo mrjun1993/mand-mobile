@@ -17,7 +17,7 @@
       title="选择出险时间"
       large-radius
       :text-render="textRender"
-      :custom-types="['yyyy', 'MM','dd', 'hh', 'mm']"
+      :custom-types="['yyyy', 'MM']"
       :default-date="currentDate"
       @change="onDatePickerChange"
       @confirm="onDatePickerConfirm"
@@ -25,7 +25,8 @@
   </div>
 </template>
 
-<script>import {DatePicker, Field, FieldItem} from 'mand-mobile'
+<script>
+import {DatePicker, Field, FieldItem} from 'mand-mobile'
 
 export default {
   name: 'date-picker-demo',
@@ -70,4 +71,5 @@ export default {
     },
   },
 }
-</script>
+
+</script>
